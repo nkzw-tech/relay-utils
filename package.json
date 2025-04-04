@@ -1,0 +1,47 @@
+{
+  "name": "@nkzw/relay-utils",
+  "version": "1.0.0",
+  "description": "Utility functions for the Relay GraphQL framework.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "mkdir -p lib && tsup src/index.ts -d lib --target=node22 --format=esm --clean --no-splitting --dts",
+    "format": "prettier \"**/*.{js,jsx,json,tsx,ts}\" --write",
+    "lint": "eslint --cache .",
+    "test": "tsc && pnpm lint"
+  },
+  "author": {
+    "name": "Christoph Nakazawa",
+    "email": "christoph.pojer@gmail.com"
+  },
+  "homepage": "https://github.com/nkzw-tech/library-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkzw-tech/library-template"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@nkzw/eslint-config": "^2.2.0",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-relay": "^18.2.0",
+    "@types/relay-runtime": "^18.2.5",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "react": "^19.1.0",
+    "react-relay": "^18.2.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-relay": "^18"
+  }
+}
