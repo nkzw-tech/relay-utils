@@ -1,6 +1,6 @@
 {
   "name": "@nkzw/relay-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility functions for the Relay GraphQL framework.",
   "type": "module",
   "main": "./lib/index.js",
@@ -42,6 +42,6 @@
   },
   "peerDependencies": {
     "react": "^18 || ^19",
-    "react-relay": "^18"
+    "react-relay": "^18 || ^19 || ^20"
   }
 }
